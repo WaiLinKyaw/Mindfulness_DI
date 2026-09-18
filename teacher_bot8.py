@@ -855,7 +855,7 @@ async def post_init(application):
     # (ဂ) နေ့စဉ် ညပိုင်း Routine Checklist ပို့ရန် (ဥပမာ - ည ၈:၀၀)
     scheduler.add_job(
         broadcast_routine_to_students,
-        CronTrigger(hour=22, minute=30, timezone=MM_TZ),
+        CronTrigger(hour=22, minute=40, timezone=MM_TZ),
         args=["evening", "🌙 မင်္ဂလာညချမ်းပါခင်ဗျာ၊ ညပိုင်း လေ့ကျင့်မှုများ ဖြစ်ပါသည် -"],
         id="evening_routine",
         name="Evening Routine Checklist"
